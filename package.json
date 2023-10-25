@@ -1,0 +1,24 @@
+{
+  "name": "saint-js",
+  "version": "1.0.4",
+  "description": "Light Weight Lib for managing data store for react applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Redux",
+    "Data",
+    "management",
+    "Lib",
+    "for",
+    "frontend",
+    "app"
+  ],
+  "author": "Prashant Shah",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">= 16.8.0",
+    "react-dom": ">= 16.8.0"
+  }
+}
