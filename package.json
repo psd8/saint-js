@@ -1,6 +1,6 @@
 {
   "name": "saint-js",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Light Weight Lib for managing data store for react applications",
   "main": "index.js",
   "scripts": {
