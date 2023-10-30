@@ -21,6 +21,10 @@
   ],
   "author": "Prashant Shah",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psd8/saint-js"
+  },
   "peerDependencies": {
     "react": ">= 16.8.0",
     "react-dom": ">= 16.8.0"

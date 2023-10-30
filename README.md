@@ -67,7 +67,11 @@ import { actions } from "saint-js";
 
     const { userData, setUserData } = useSaint('user'); // keyname with 'Data' word appended to it
     const { agentData, setAgentData } = useSaint('agent'); // keyname with 'Data' word appended to it
-    const { studentData, setStudentData } = useSaint('student'); // keyname with 'Data' word appended to it
+    const { studentData, setStudentData } = useSaint('student'); // keyname with 'Data' word appended to it 
+
+    // show data using state variable extracted from action hook function
+
+    <div>{userData}</div>
 ```
 
 Once you done with above things you can use variable and setter methods as similar as any other useState hook just here we are doing object destructuring in above step instead of Array Destructuring and use them like following way
@@ -91,6 +95,6 @@ useEffect(() => {
 
 ## MIT
 
-> GitHub [@AbhijeetGiram](https://github.com/psd8) &nbsp;&middot;&nbsp;
-> LinkedIn [@AbhijeetGiram](https://www.linkedin.com/in/prashant-shah-42974aa9/) &nbsp;&middot;&nbsp;
-> Stack-Overflow [@AbhijeetGiram](https://stackoverflow.com/users/11953446/prashant-shah?tab=profile)
+> GitHub [@PrashantShah(psd8)](https://github.com/psd8) &nbsp;&middot;&nbsp;
+> LinkedIn [@PrashantShah(psd8)](https://www.linkedin.com/in/prashant-shah-42974aa9/) &nbsp;&middot;&nbsp;
+> Stack-Overflow [@PrashantShah(psd8)](https://stackoverflow.com/users/11953446/prashant-shah?tab=profile)
