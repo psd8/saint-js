@@ -1,4 +1,4 @@
-# ![Saint-JS-Logo!](logo.png) Saint JS
+# ![Saint-JS-Logo!](small-logo.png) Saint JS
 
 This is another react hook which make life simpler in terms of frontend state management. It will automatically generate hook functions which contains latest updated value of that key and action creator which will update data in store and will be catch by same copy variable which eventually rerender the functional component where state management variable are used.
 
@@ -44,18 +44,21 @@ root.render(
 
 - once setup is done, it will generate data variables and actions to update store data based individual key defined in initialStore object
 
-1. If you need to access multiple keys in single component then below method is recommended
+1.If you need to access multiple keys in single component then below method is recommended
 
 ```bash
 import { actions } from "saint-js";
 
-//1st way you can extract actions and data variables via destructuring actions object, based on initialStore which we defined on above setup step it will generate individual hook functions for each key with use word appended as per standard naming convention of any normal hook
+//1st way you can extract actions and data variables 
+via destructuring actions object, based on initialStore 
+which we defined on above setup step it will generate 
+individual hook functions for each key with use word prepended as per standard naming convention of any normal hook
 
-    const {useUsers, useAgent, useStudent} = actions; // after extracting required hook functions we can call to get those keys value and action creator function like
+const {useUsers, useAgent, useStudent} = actions; // after extracting required hook functions we can call to get those keys value and action creator function like
 
-    const { userData, setUserData } = useUser(); // keyname with 'Data' word appended to it
-    const { agentData, setAgentData } = useAgent(); // keyname with 'Data' word appended to it
-    const { studentData, setStudentData } = useStudent(); // keyname with 'Data' word appended to it
+const { userData, setUserData } = useUser(); // keyname with 'Data' word appended to it
+const { agentData, setAgentData } = useAgent(); // keyname with 'Data' word appended to it
+const { studentData, setStudentData } = useStudent(); // keyname with 'Data' word appended to it
 
 );
 ```
@@ -63,15 +66,15 @@ import { actions } from "saint-js";
 2. If you find only couple of actions need to be used inside of component then useSaint() hook is recommended way
 
 ```bash
-    import { useSaint } from "saint-js";
+import { useSaint } from "saint-js";
 
-    const { userData, setUserData } = useSaint('user'); // keyname with 'Data' word appended to it
-    const { agentData, setAgentData } = useSaint('agent'); // keyname with 'Data' word appended to it
-    const { studentData, setStudentData } = useSaint('student'); // keyname with 'Data' word appended to it 
+const { userData, setUserData } = useSaint('user'); // keyname with 'Data' word appended to it
+const { agentData, setAgentData } = useSaint('agent'); // keyname with 'Data' word appended to it
+const { studentData, setStudentData } = useSaint('student'); // keyname with 'Data' word appended to it 
 
-    // show data using state variable extracted from action hook function
+// show data using state variable extracted from action hook function
 
-    <div>{userData}</div>
+<div>{userData}</div>
 ```
 
 Once you done with above things you can use variable and setter methods as similar as any other useState hook just here we are doing object destructuring in above step instead of Array Destructuring and use them like following way
