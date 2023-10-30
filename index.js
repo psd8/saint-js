@@ -5,7 +5,7 @@ import { Provider } from "./components";
 const actions = {};
 const updateActions = function (newActions) {
   for (const item in newActions) {
-    actions[item] = newActions[item];\
+    actions[item] = newActions[item];
   }
 };
 
