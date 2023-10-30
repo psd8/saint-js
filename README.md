@@ -1,4 +1,4 @@
-# ![Saint-JS-Logo!](small-logo.png) Saint JS
+# ![Saint-JS-Logo!](logo.png) Saint JS
 
 This is another react hook which make life simpler in terms of frontend state management. It will automatically generate hook functions which contains latest updated value of that key and action creator which will update data in store and will be catch by same copy variable which eventually rerender the functional component where state management variable are used.
 
